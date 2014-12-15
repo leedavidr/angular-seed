@@ -1,3 +1,4 @@
+@import "_normalize.less";
 @import "_base.less";
 @import "_color.less";
 @import "_font.less";
@@ -5,3 +6,33 @@
 @import "_layout.less";
 @import "_form.less";
 
+/* angular-seed stylesheet, unnecessary */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}

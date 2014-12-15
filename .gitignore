@@ -6,3 +6,4 @@ tmp
 .idea
 *.iml
 app/assets/css/app.css
+app/index.html

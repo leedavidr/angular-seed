@@ -1,0 +1,50 @@
+doctype html
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="en" ng-app="myApp" class="no-js")
+    <!--<![endif]-->
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        title My AngularJS App
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="assets/css/app.css")
+    body
+        ul(class="menu")
+            li
+                a(href="#/view1") view1
+            li
+                a(href="#/view2") view2
+
+        <!--[if lt IE 7]>
+        p(class="browsehappy")
+            | You are using an
+            strong outdated
+            | browser. Please
+            a(href="http://browsehappy.com/") upgrade your browser
+            | to improve your experience.
+        <![endif]-->
+
+        div(ui-view)
+
+        div
+            | Angular seed app: v
+            span(app-version)
+
+        script(src="assets/libs/angular/angular.min.js")
+        script(src="assets/libs/angular-ui-router/release/angular-ui-router.min.js")
+        script(src="app.js")
+        script(src="views/view1/view1.js")
+        script(src="views/view2/view2.js")
+        script(src="components/version/version.js")
+        script(src="components/version/version-directive.js")
+        script(src="components/version/interpolate-filter.js")
